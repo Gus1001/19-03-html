@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Formularios</h2>
+
+    <form action="rgister.php" >
+    <div>
+        <label>Nome</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="age">Idade</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="job">Selecioneuma profissão</label>
+        <select name="job">
+            <option value="programador">Programador</option>
+            <option value="tester">Tester</option>
+            <option value="devops">Devops</option>
+        </select>
+
+        <div>
+            <label for="comment">Escreva um comentário</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="firstname">Nome</label>
+                <input type="text" name="lastname">
+                <label for="firstname">Sobrenome</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="flavor">escolha o sabor</label>
+            <input type="text" list="flavors"
+            name="flavor">
+
+            <datalist id="flavors">
+                <option value="cereja">Cereja</option>
+                <option value="Morango">Morango</option>
+                <option value="maracuja">Maracuja</option>
+                <option value="amora">Amora</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro</label>
+
+            <div class="radio">
+                <input type="radio" value="dodge" name="car_model">
+                <label for="dodge">Dodge</label>
+            </div>
+        </div>
+
+        <div class="radio">
+            <div class="radio">
+                <input type="radio" value="lamboguini" name="car_model">
+                <label for="lamboguini">Lamborguini</label>
+            </div>
+        </div>
+
+        <div class="radio">
+            <div class="radio">
+                <input type="radio" value="hyundai" name="car_model">
+                <label for="hyundai">Hyundai</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="opitionals">Opicionais do carro</label>
+            <div class="radio">
+                <input type="checkbox" name="opitionals[]" value="big_tires">
+                <label for="big_tires">Pneus Grande</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="opitionals[]" value="turbo_engine">
+                <label for="turbo_engine">Motor turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="opitionals[]" value="hybrid">
+                <label for="hybrid">Hibrido</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="birthday">Data de nascimento
+            </label>
+            <input type="date" name="birthday">
+        </div>
+
+        <div>
+            <label for="image">Insira sua imagem
+            </label>
+            <input type="file" name="image">
+        </div>
+
+        <div>
+            <label for="email">Insira seu email
+            </label>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <label for="value">Digite algum valor para doação</label>
+            <input type="text" value="10 R$" name="value">
+        </div>
+
+        <div>
+            <p>Tente mudar o valor</p>
+            <input type="text" value="Nã consegue mais" disabled>
+        </div>
+        
+        <div>
+            <label for="currentjob">Digite sua profissão</label>
+            <input type="text" placeholder="Ano de nascimento" required>
+        </div>
+
+        <input type="reset" value="Limpar">
+        <input type="subimit" value="enviar">
+    
+        
+    </div>
+</form>
+
+
+</body>
+</html>
